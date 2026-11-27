@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "product": {
+    "name": "OnlyPort",
+    "slug": "onlyport",
+    "tagline": "Windows 开发端口监控",
+    "description": "原 PortLens，监控端口、进程及开发服务",
+    "category": "Windows Tools",
+    "status": "development",
+    "platforms": [
+      "Windows"
+    ],
+    "architectures": [
+      "x64"
+    ]
+  },
+  "repository": {
+    "owner": "onlytools-lab",
+    "name": "onlyport",
+    "url": "https://github.com/onlytools-lab/onlyport"
+  },
+  "release": {
+    "tagPrefix": "v",
+    "titleFormat": "{product} v{version}",
+    "assetNaming": "PortLens-v{version}-win-x64.msi",
+    "requireSha256": false
+  },
+  "build": {
+    "commands": {
+      "test": "dotnet test PortLens.sln",
+      "build": "dotnet build PortLens.sln"
+    },
+    "artifactsPath": "outputs/",
+    "versionFiles": [
+      "Directory.Build.props"
+    ]
+  },
+  "documentation": {
+    "language": "zh-CN",
+    "readme": "README.md",
+    "changelog": "CHANGELOG.md"
+  }
+}
